@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <p>
+
+    </p>
+
+    <p></p>
+    <script>
+
+        const para = document.querySelector('p:first-of-type')
+        const para2 = document.querySelector('p:last-of-type')
+
+        let names = 'tayo victor fatimoh jide joshua'
+        let arr = [10,22,23,4,5,2,11,65,39,100]
+        //let index = arr[0]
+
+        names = names.split(' ')
+        //to add a value at the end of an array
+        names.push('dami', 'precious', 'tife')
+
+        //to add a value at the start of an array
+        names.unshift('kola')
+
+        //to add a value in the middle of an array
+        names.splice(3,0,'darasmi','franc')
+        names.splice(4,1,'nero')
+
+        oldNames = names.slice()
+
+        oldNames.pop()
+
+        names.shift()
+
+        let pastStud = ['sharon', 'thariwat', 'ben', 'stephen' ]
+
+        names.includes('tife')
+
+
+        para.textContent = 'OldNames: ' + arr.sort((d,g) => d-g).reverse(    )
+        para2.textContent = 'Current names: ' + names. filter(x => x.includes('s'))
+
+        
+    </script>
+</body>
+</html>
